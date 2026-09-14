@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vora Studios — Estudio de diseño y desarrollo web</title>
+<meta name="description" content="VORA es un estudio de diseño y desarrollo web en Cochabamba, Bolivia. Usamos inteligencia artificial como material creativo, no como atajo.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/vora.css">
+<link rel="preload" as="image" href="assets/video/posters/01-rosa-marfil.jpg">
+</head>
+<body>
+
+<a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+
+<!-- ─────────── Columna izquierda: el herbario ─────────── -->
+<aside class="stage" aria-label="Herbario digital de Vora">
+
+  <div class="stage__frame">
+    <video class="stage__layer is-live" muted playsinline preload="auto"
+           poster="assets/video/posters/01-rosa-marfil.jpg"
+           src="assets/video/flores/01-rosa-marfil.mp4"></video>
+    <video class="stage__layer" muted playsinline preload="auto"></video>
+  </div>
+
+  <figcaption class="specimen" aria-live="polite">
+    <p class="specimen__latin" data-slot="latin">Rosa × centifolia</p>
+    <p class="specimen__common"><span data-slot="common">Rosa de papel</span><span class="specimen__tag" data-slot="tag" hidden>no registrada</span></p>
+    <p class="specimen__meta">
+      <span class="specimen__index"><span data-slot="index">01</span><span class="specimen__total">/28</span></span>
+      <span class="specimen__phase" data-slot="phase">Observación</span>
+    </p>
+  </figcaption>
+
+  <ol class="rail" aria-hidden="true"></ol>
+
+  <p class="stage__note" data-i18n="stageNote">Herbario en curso · 28 especímenes</p>
+</aside>
+
+<!-- ─────────── Columna derecha: la página ─────────── -->
+<div class="page">
+
+  <header class="topbar">
+    <a class="mark" href="#inicio" aria-label="Vora Studios, inicio">
+      <span class="mark__name">Vora</span>
+      <span class="mark__suffix">Studios</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#estudio" data-i18n="navStudio">Estudio</a>
+      <a href="#servicios" data-i18n="navServices">Servicios</a>
+      <a href="#proceso" data-i18n="navProcess">Proceso</a>
+      <a href="#trabajo" data-i18n="navWork">Trabajo</a>
+      <a href="#contacto" data-i18n="navContact">Contacto</a>
+    </nav>
+    <button class="lang" type="button" aria-label="Cambiar idioma a inglés">
+      <span class="lang__on">ES</span><span class="lang__off">EN</span>
+    </button>
+  </header>
+
+  <main id="contenido">
+
+    <!-- 1 ───────────────────────────────────────────── -->
+    <section class="block block--hero" id="inicio">
+      <h1 class="hero__title">
+        <span class="line"><span data-i18n="heroLine1">Construimos sitios</span></span>
+        <span class="line"><span data-i18n="heroLine2">que se recuerdan.</span></span>
+      </h1>
+      <p class="hero__lede measure" data-i18n="heroLede">
+        VORA es un estudio de diseño y desarrollo web en Cochabamba. Tratamos la
+        inteligencia artificial como un material con el que se trabaja a mano, no como
+        un atajo para producir más rápido lo mismo de siempre.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#contacto" data-i18n="heroCtaPrimary">Empezar un proyecto</a>
+        <a class="btn btn--ghost" href="#trabajo" data-i18n="heroCtaSecondary">Ver el trabajo</a>
+      </div>
+      <p class="hero__cue" aria-hidden="true"><span data-i18n="heroCue">Desplázate</span></p>
+    </section>
+
+    <!-- 2 ───────────────────────────────────────────── -->
+    <section class="block" id="manifiesto" data-reveal="rule">
+      <h2 class="h2" data-i18n="manifestoTitle">La IA como material, no como atajo.</h2>
+      <div class="prose measure">
+        <p data-i18n="manifestoP1">
+          Cada flor de esta página empezó como una especie real, fue reconstruida en papel
+          y después imaginada de nuevo por una máquina. No existen en la naturaleza, pero representan
+          exactamente cómo trabajamos: tomamos referencias reales, las refinamos bajo nuestra dirección de arte,
+          y creamos la identidad visual que tus clientes recordarán.
+        </p>
+        <p data-i18n="manifestoP2">
+          Nos interesa lo que la inteligencia artificial permite construir, no lo que permite
+          ahorrar. La usamos para explorar más caminos, no para recorrer menos.
+        </p>
+      </div>
+      <ul class="beliefs">
+        <li><span data-i18n="belief1">La decisión es humana; la iteración puede no serlo.</span></li>
+        <li><span data-i18n="belief2">Un sitio rápido es una decisión de diseño, no una tarea técnica.</span></li>
+        <li><span data-i18n="belief3">Si no se puede sostener sin nosotros, no está terminado.</span></li>
+      </ul>
+    </section>
+
+    <!-- 3 ───────────────────────────────────────────── -->
+    <section class="block" id="servicios" data-reveal="stagger">
+      <h2 class="h2" data-i18n="servicesTitle">Qué hacemos</h2>
+      <ul class="services">
+        <li class="service">
+          <h3 class="service__name" data-i18n="service1Name">Sitios web a medida</h3>
+          <p class="service__desc" data-i18n="service1Desc">Diseño y desarrollo de punta a punta. Landing pages, sitios institucionales, tiendas y experiencias con las que nadie más se parece.</p>
+        </li>
+        <li class="service">
+          <h3 class="service__name" data-i18n="service2Name">Identidad visual</h3>
+          <p class="service__desc" data-i18n="service2Desc">Marca, sistema tipográfico, paleta y dirección de arte. La identidad que el sitio necesita para no parecer una plantilla.</p>
+        </li>
+        <li class="service">
+          <h3 class="service__name" data-i18n="service3Name">Contenido multimedia</h3>
+          <p class="service__desc" data-i18n="service3Desc">Video, fotografía e imagen generada con IA bajo una dirección de arte propia. Piezas para el sitio, para redes y para campañas.</p>
+        </li>
+        <li class="service">
+          <h3 class="service__name" data-i18n="service4Name">Sistemas y automatización</h3>
+          <p class="service__desc" data-i18n="service4Desc">Formularios, CRM, catálogos, integraciones y flujos internos. Lo que hace que el sitio siga funcionando cuando entregamos.</p>
+        </li>
+        <li class="service">
+          <h3 class="service__name" data-i18n="service5Name">Producción audiovisual</h3>
+          <p class="service__desc" data-i18n="service5Desc">Grabación, edición y dirección de arte en Bolivia. Equipo profesional completo para transformar tu visión en contenido audiovisual que lleva tu identidad visual a cada frame.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4 ───────────────────────────────────────────── -->
+    <section class="block" id="proceso" data-reveal="stagger">
+      <h2 class="h2" data-i18n="processTitle">Cómo trabajamos</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n">01</span>
+          <h3 class="step__name" data-i18n="step1Name">Escuchar</h3>
+          <p class="step__desc measure" data-i18n="step1Desc">Entendemos el negocio antes que la estética. Qué vende, a quién, y qué tiene que pasar para que el sitio se pague solo.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">02</span>
+          <h3 class="step__name" data-i18n="step2Name">Imaginar</h3>
+          <p class="step__desc measure" data-i18n="step2Desc">Exploramos direcciones en paralelo con IA y descartamos rápido. Presentamos pocas opciones, todas defendibles.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">03</span>
+          <h3 class="step__name" data-i18n="step3Name">Construir</h3>
+          <p class="step__desc measure" data-i18n="step3Desc">Código propio, sin constructores. Rápido en celular, accesible, medible desde el primer día.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">04</span>
+          <h3 class="step__name" data-i18n="step4Name">Sostener</h3>
+          <p class="step__desc measure" data-i18n="step4Desc">Entregamos con documentación y te enseñamos a moverlo. Si prefieres, nos quedamos como equipo de mantenimiento.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 5 ───────────────────────────────────────────── -->
+    <section class="block" id="trabajo" data-reveal="stagger">
+      <h2 class="h2" data-i18n="workTitle">Trabajo seleccionado</h2>
+      <ul class="work">
+        <li class="project">
+          <h3 class="project__name" data-i18n="project1Name">SMILE IMPORTER</h3>
+          <p class="project__kind" data-i18n="project1Kind">Identidad visual · Página web · E-commerce</p>
+          <p class="project__year">2026</p>
+        </li>
+        <li class="project">
+          <h3 class="project__name" data-i18n="project2Name">Proyecto dos</h3>
+          <p class="project__kind" data-i18n="project2Kind">E-commerce · Contenido</p>
+          <p class="project__year">2026</p>
+        </li>
+        <li class="project">
+          <h3 class="project__name" data-i18n="project3Name">Proyecto tres</h3>
+          <p class="project__kind" data-i18n="project3Kind">Landing · Campaña</p>
+          <p class="project__year">2026</p>
+        </li>
+      </ul>
+      <p class="work__note" data-i18n="workNote">Los casos de estudio se publican a medida que los clientes autorizan.</p>
+    </section>
+
+    <!-- 6 ───────────────────────────────────────────── -->
+    <section class="block" id="estudio" data-reveal="rule">
+      <h2 class="h2" data-i18n="studioTitle">El estudio</h2>
+      <div class="prose measure">
+        <p data-i18n="studioP1">
+          Somos un estudio pequeño en Cochabamba, Bolivia. Trabajamos con pocos clientes
+          a la vez porque cada proyecto pasa por las mismas manos de principio a fin.
+        </p>
+        <p data-i18n="studioP2">
+          Atendemos en español y en inglés, con clientes dentro y fuera del país.
+        </p>
+      </div>
+      <dl class="facts">
+        <div><dt data-i18n="factBaseLabel">Base</dt><dd data-i18n="factBaseValue">Cochabamba, Bolivia</dd></div>
+        <div><dt data-i18n="factFoundedLabel">Fundado</dt><dd>2026</dd></div>
+        <div><dt data-i18n="factLangLabel">Idiomas</dt><dd data-i18n="factLangValue">Español · Inglés</dd></div>
+      </dl>
+    </section>
+
+    <!-- 7 ───────────────────────────────────────────── -->
+    <section class="block block--contact" id="contacto">
+      <h2 class="h2 h2--big" data-i18n="contactTitle">Cuéntanos qué estás construyendo.</h2>
+      <p class="prose measure" data-i18n="contactLede">
+        Escríbenos con lo que tengas: una idea suelta, un sitio que ya no rinde, o un
+        proyecto con fecha. Respondemos en menos de 24 horas.
+      </p>
+
+      <!-- Salida rápida para quien no quiere llenar campos -->
+      <aside class="direct">
+        <div>
+          <p class="direct__title" data-i18n="directTitle">¿Prefieres hablar ahora?</p>
+          <p class="direct__sub" data-i18n="directSub">Escríbenos por WhatsApp y te respondemos hoy mismo.</p>
+        </div>
+        <a class="btn btn--solid direct__btn" data-wa href="#" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.465 3.488"/></svg>
+          <span data-i18n="waCta">Consultar ahora</span>
+        </a>
+      </aside>
+
+      <form class="form" novalidate>
+        <div class="form__grid">
+          <p class="field">
+            <label class="field__label" for="f-nombre" data-i18n="fName">Nombre</label>
+            <input class="field__input" id="f-nombre" name="nombre" type="text"
+                   autocomplete="name" required maxlength="80">
+          </p>
+          <p class="field">
+            <label class="field__label" for="f-wa" data-i18n="fPhone">WhatsApp</label>
+            <input class="field__input" id="f-wa" name="whatsapp" type="tel"
+                   autocomplete="tel" required maxlength="24" placeholder="+591 7 000 0000">
+          </p>
+          <p class="field">
+            <label class="field__label" for="f-mail" data-i18n="fMail">Correo</label>
+            <input class="field__input" id="f-mail" name="correo" type="email"
+                   autocomplete="email" required maxlength="120">
+          </p>
+          <p class="field">
+            <label class="field__label" for="f-lugar" data-i18n="fPlace">Ciudad y país</label>
+            <input class="field__input" id="f-lugar" name="lugar" type="text"
+                   required maxlength="80" placeholder="Cochabamba, Bolivia">
+          </p>
+        </div>
+
+        <p class="field">
+          <label class="field__label" for="f-tipo" data-i18n="fKind">Qué necesitas</label>
+          <span class="field__select">
+            <select class="field__input" id="f-tipo" name="tipo" required>
+              <option value="" selected disabled data-i18n="fKind0">Elige una opción</option>
+              <option data-i18n="fKind1">Sitio web a medida</option>
+              <option data-i18n="fKind2">Rediseño de un sitio que ya tengo</option>
+              <option data-i18n="fKind3">Identidad visual</option>
+              <option data-i18n="fKind4">Contenido multimedia</option>
+              <option data-i18n="fKind5">Sistemas y automatización</option>
+              <option data-i18n="fKind6">Varias cosas · todavía no lo tengo claro</option>
+            </select>
+            <svg class="field__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </span>
+        </p>
+
+        <p class="field">
+          <label class="field__label" for="f-detalle">
+            <span data-i18n="fDetail">Cuéntanos un poco más</span>
+            <span class="field__opt" data-i18n="fOptional">opcional</span>
+          </label>
+          <textarea class="field__input" id="f-detalle" name="detalle" rows="3" maxlength="600"></textarea>
+        </p>
+
+        <div class="form__foot">
+          <button class="btn btn--solid form__send" type="submit">
+            <span data-i18n="fSend">Enviar</span>
+          </button>
+          <p class="form__note" data-i18n="fNote">Respondemos en menos de 24 horas.</p>
+        </div>
+
+        <p class="form__msg" role="status" aria-live="polite" hidden></p>
+      </form>
+
+      <!-- El correo se arma en JS por lo mismo que el número: un mailto: escrito
+           en el HTML es lo primero que levantan los bots de spam. -->
+      <ul class="channels">
+        <li><a data-mail href="#">—</a></li>
+        <li><a href="https://instagram.com/" rel="noopener">Instagram</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p class="foot__mark">Vora Studios</p>
+    <p class="foot__legal">© <span data-slot="year">2026</span> · <span data-i18n="footRights">Cochabamba, Bolivia</span></p>
+    <p class="foot__credit" data-i18n="footCredit">Las 28 flores de este sitio no existen. Capturamos las alucinaciones de la IA, las refinamos bajo nuestra dirección de arte, y las convertimos en el lenguaje visual de VORA.</p>
+  </footer>
+
+</div>
+
+<!-- Aparece pasado el hero y acompaña el resto del scroll -->
+<a class="fab" data-wa href="#" rel="noopener" aria-label="Consultar por WhatsApp">
+  <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.465 3.488"/></svg>
+  <span class="fab__label" data-i18n="waCta">Consultar ahora</span>
+</a>
+
+<script src="assets/js/flores.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/vora.js"></script>
+</body>
+</html>

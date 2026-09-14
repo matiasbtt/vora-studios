@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pago de proyecto — Vora Studios</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/vora.css">
+</head>
+<body class="pay">
+
+<header class="pay__top">
+  <a class="mark" href="index.html" aria-label="Vora Studios, inicio">
+    <span class="mark__name">Vora</span>
+    <span class="mark__suffix">Studios</span>
+  </a>
+</header>
+
+<main class="pay__main">
+  <h1 class="h2 pay__title">Pago de proyecto</h1>
+  <p class="prose pay__lede">
+    Escanea el código desde la app de tu banco y escribe el monto que acordamos.
+    Funciona con cualquier banco o billetera de Bolivia.
+  </p>
+
+  <figure class="qr">
+    <img class="qr__img" src="assets/img/qr-vora.png" alt="Código QR de pago de Vora Studios" hidden>
+    <div class="qr__falta">
+      <p class="qr__faltaTitle">QR pendiente</p>
+      <p class="qr__faltaSub">Guarda la imagen como <code>assets/img/qr-vora.png</code></p>
+    </div>
+  </figure>
+
+  <ol class="pasos">
+    <li><span class="pasos__n">01</span><span>Abre la app de tu banco y entra a pagar con QR.</span></li>
+    <li><span class="pasos__n">02</span><span>Escanea el código de arriba.</span></li>
+    <li><span class="pasos__n">03</span><span>Escribe el monto acordado y confirma.</span></li>
+    <li><span class="pasos__n">04</span><span>Toca el botón de abajo y envíanos el comprobante.</span></li>
+  </ol>
+
+  <a class="btn btn--solid pay__cta" id="ya-pague" href="#" rel="noopener">
+    <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.465 3.488"/></svg>
+    <span>Ya hice el pago</span>
+  </a>
+
+  <p class="pay__alt">
+    ¿Prefieres transferencia o pagas desde fuera de Bolivia?
+    <a href="#" id="otro-medio">Escríbenos y te pasamos los datos.</a>
+  </p>
+</main>
+
+<footer class="foot pay__foot">
+  <p class="foot__mark">Vora Studios</p>
+  <p class="foot__legal">© <span id="anio">2026</span> · Cochabamba, Bolivia</p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var WA = '59171777847';
+  function wa(t) { return 'https://wa.me/' + WA + '?text=' + encodeURIComponent(t); }
+
+  document.getElementById('ya-pague').href =
+    wa('Hola, ya hice el pago del proyecto. Adjunto el comprobante.');
+  document.getElementById('otro-medio').href =
+    wa('Hola, quiero pagar por otro medio. ¿Me pasas los datos?');
+  document.getElementById('anio').textContent = String(new Date().getFullYear());
+
+  // El QR solo se muestra cuando el archivo existe; si no, queda el aviso.
+  var img = document.querySelector('.qr__img');
+  var falta = document.querySelector('.qr__falta');
+  img.addEventListener('load', function () { img.hidden = false; falta.hidden = true; });
+  img.addEventListener('error', function () { img.remove(); });
+  img.src = img.getAttribute('src');
+})();
+</script>
+</body>
+</html>
