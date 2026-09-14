@@ -265,6 +265,12 @@ a { color: inherit; }
   font-family: var(--font-display);
   font-variation-settings: 'SOFT' 40, 'WONK' 1, 'opsz' 40;
 }
+.mark__icon {
+  height: 1.35em;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
 .mark__name {
   font-size: 1.3125rem;
   font-weight: 400;
@@ -827,11 +833,21 @@ select.field__input option { background: #14140F; color: var(--ink); }
   color: var(--ink-3);
 }
 .foot__mark {
+  display: flex;
+  align-items: baseline;
+  gap: .4rem;
   font-family: var(--font-display);
   font-variation-settings: 'SOFT' 40, 'WONK' 1, 'opsz' 40;
   font-size: 1rem;
   color: var(--ink-2);
   margin-right: auto;
+}
+.foot__mark-icon {
+  height: 1.2em;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  opacity: .85;
 }
 .foot__credit { flex-basis: 100%; max-width: 34rem; }
 
