@@ -22,7 +22,7 @@ window.VORA_I18N = {
     heroCue: 'Scroll',
 
     manifestoTitle: 'AI as a material, not a shortcut.',
-    manifestoP1: 'Every flower on this page began as a real species, was rebuilt in paper, and then imagined again by a machine. They don't exist in nature, but they represent exactly how we work: we take real references, refine them under our art direction, and create the visual identity your clients will remember.',
+    manifestoP1: 'Every flower on this page began as a real species, was rebuilt in paper, and then imagined again by a machine. They don’t exist in nature, but they represent exactly how we work: we take real references, refine them under our art direction, and create the visual identity your clients will remember.',
     manifestoP2: 'We care about what artificial intelligence lets us build, not about what it lets us skip. We use it to explore more paths, not to walk fewer.',
     belief1: 'The decision is human; the iteration need not be.',
     belief2: 'A fast site is a design decision, not a technical chore.',
@@ -93,7 +93,7 @@ window.VORA_I18N = {
     fNote: 'We reply within 24 hours.',
 
     footRights: 'Cochabamba, Bolivia',
-    footCredit: 'The 28 flowers on this site do not exist. We captured AI's hallucinations, refined them under our art direction, and transformed them into VORA's visual language.'
+    footCredit: 'The 28 flowers on this site do not exist. We captured AI’s hallucinations, refined them under our art direction, and transformed them into VORA’s visual language.'
   },
 
   /* Etiquetas de la ficha del espécimen */
