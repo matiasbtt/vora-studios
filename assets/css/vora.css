@@ -258,32 +258,14 @@ a { color: inherit; }
 
 .mark {
   display: flex;
-  align-items: baseline;
-  gap: .4rem;
+  align-items: center;
   margin-right: auto;
   text-decoration: none;
-  font-family: var(--font-display);
-  font-variation-settings: 'SOFT' 40, 'WONK' 1, 'opsz' 40;
 }
-.mark__icon {
-  height: 1.35em;
+.mark__logo {
+  height: 2.1rem;
   width: auto;
   display: block;
-  flex-shrink: 0;
-}
-.mark__name {
-  font-size: 1.3125rem;
-  font-weight: 400;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.mark__suffix {
-  font-family: var(--font-text);
-  font-size: .6875rem;
-  font-weight: 500;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: var(--ink-3);
 }
 
 .nav {
@@ -834,19 +816,13 @@ select.field__input option { background: #14140F; color: var(--ink); }
 }
 .foot__mark {
   display: flex;
-  align-items: baseline;
-  gap: .4rem;
-  font-family: var(--font-display);
-  font-variation-settings: 'SOFT' 40, 'WONK' 1, 'opsz' 40;
-  font-size: 1rem;
-  color: var(--ink-2);
+  align-items: center;
   margin-right: auto;
 }
-.foot__mark-icon {
-  height: 1.2em;
+.foot__mark-logo {
+  height: 1.4rem;
   width: auto;
   display: block;
-  flex-shrink: 0;
   opacity: .85;
 }
 .foot__credit { flex-basis: 100%; max-width: 34rem; }
